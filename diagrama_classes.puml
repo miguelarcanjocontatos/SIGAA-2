@@ -1,0 +1,109 @@
+@startuml SIGAA 2
+
+' --- Classes ---
+abstract class Pessoa {
+    -String nome
+    -String cpf
+    +String getNome()
+    +void setNome(String)
+    +String getCpf()
+    +void setCpf(String)
+    +apresentar()*
+}
+
+class Aluno {
+    -String matricula
+    +String getMatricula()
+    +void setMatricula(String)
+    +void apresentar()
+}
+
+class Professor {
+    -String departamento
+    +String getDepartamento()
+    +void setDepartamento(String)
+    +void apresentar()
+}
+
+abstract class ComponenteAcademico {
+    -String codigo
+    -String nome
+    +String getCodigo()
+    +String getNome()
+    +exibirDetalhes()*
+}
+
+class Disciplina {
+    -int cargaHoraria
+    +int getCargaHoraria()
+    +void exibirDetalhes()
+}
+
+class Curso {
+    -int duracaoSemestres
+    +int getDuracaoSemestres()
+    +void exibirDetalhes()
+}
+
+class Endereco {
+    -String id
+    -String rua
+    -String cidade
+}
+
+class Turma {
+    -String codigoTurma
+    +void adicionarAluno(Aluno)
+    +void exibirInformacoes()
+}
+
+class Secretaria {
+    -List~Aluno~ alunos
+    -List~Professor~ professores
+    -List~Disciplina~ disciplinas
+    -List~Curso~ cursos
+    -List~Turma~ turmas
+    -List~Endereco~ enderecos
+    +void adicionarAluno(Aluno)
+    +void removerAluno(String)
+    +... CRUDs
+}
+
+class App {
+    -Scanner scanner
+    -Secretaria secretaria
+    +main(String[])
+    -gerenciarAlunos()
+    -gerenciarProfessores()
+    - ...
+}
+
+class RecursoNaoEncontradoException {
+    +RecursoNaoEncontradoException(String)
+}
+
+' --- Relacionamentos de Herança ---
+Pessoa <|-- Aluno
+Pessoa <|-- Professor
+ComponenteAcademico <|-- Disciplina
+ComponenteAcademico <|-- Curso
+Exception <|-- RecursoNaoEncontradoException
+
+' --- Relacionamentos de Composição/Agregação ---
+Secretaria o-- "0..*" Aluno
+Secretaria o-- "0..*" Professor
+Secretaria o-- "0..*" Disciplina
+Secretaria o-- "0..*" Curso
+Secretaria o-- "0..*" Turma
+Secretaria o-- "0..*" Endereco
+
+Turma --> "1" Disciplina
+Turma --> "1" Professor
+Turma o-- "0..*" Aluno
+
+' --- Relacionamentos de Dependência/Uso ---
+App ..> Secretaria : usa
+Secretaria ..> RecursoNaoEncontradoException : lança
+App ..> RecursoNaoEncontradoException : trata
+
+@enduml

@@ -1,0 +1,80 @@
+# ===================================================================
+# Arquivos Específicos Solicitados
+# ===================================================================
+
+# Ignorar configurações do Visual Studio Code
+.vscode/
+out/
+lib/
+
+# Ignorar arquivo Python na raiz do projeto
+/main.py
+
+
+# ===================================================================
+# Java & Ferramentas de Build (Maven, Gradle)
+# ===================================================================
+
+# Arquivos de bytecode compilados
+*.class
+
+# Arquivos de log
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Arquivos de pacote
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# Diretório de saída do Maven
+/target/
+
+# Diretórios de saída do Gradle
+/build/
+/.gradle/
+
+# Arquivos gerados pelo Hotspot VM em caso de erro
+hs_err_pid*
+
+
+# ===================================================================
+# Configurações de IDEs
+# ===================================================================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+.nb-gradle/
+
+
+# ===================================================================
+# Arquivos de Sistema Operacional
+# ===================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
