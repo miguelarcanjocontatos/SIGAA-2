@@ -1,4 +1,3 @@
-// src/Curso.java
 public class Curso extends ComponenteAcademico {
     private int duracaoSemestres;
 
