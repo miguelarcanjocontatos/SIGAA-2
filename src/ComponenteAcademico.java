@@ -1,4 +1,3 @@
-// src/ComponenteAcademico.java
 public abstract class ComponenteAcademico {
     private String codigo;
     private String nome;
