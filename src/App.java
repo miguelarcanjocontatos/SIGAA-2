@@ -46,23 +46,23 @@ public class App {
 
     private static void exibirMenuPrincipal() {
         System.out.println("\n\n\n\n--- SIGAA 2 - Menu Principal ---");
-        System.out.println("1. Gerenciar Alunos");
-        System.out.println("2. Gerenciar Professores");
-        System.out.println("3. Gerenciar Disciplinas");
-        System.out.println("4. Gerenciar Cursos");
-        System.out.println("5. Gerenciar Turmas");
-        System.out.println("6. Gerenciar Endereços");
-        System.out.println("0. Sair");
+        System.out.println("1 Gerenciar Alunos");
+        System.out.println("2 Gerenciar Professores");
+        System.out.println("3 Gerenciar Disciplinas");
+        System.out.println("4 Gerenciar Cursos");
+        System.out.println("5 Gerenciar Turmas");
+        System.out.println("6 Gerenciar Endereços");
+        System.out.println("0 Sair");
         System.out.print("Escolha uma opção: ");
     }
 
     // REQUISITO 5a: CRUD completo para a entidade Aluno
     private static void gerenciarAlunos() {
         System.out.println("\n\n\n\n--- Gerenciar Alunos ---");
-        System.out.println("1. Cadastrar Aluno");
-        System.out.println("2. Listar Alunos");
-        System.out.println("3. Atualizar Aluno");
-        System.out.println("4. Remover Aluno");
+        System.out.println("1 Cadastrar Aluno");
+        System.out.println("2 Listar Alunos");
+        System.out.println("3 Atualizar Aluno");
+        System.out.println("4 Remover Aluno");
         System.out.print("Opção: ");
         int op = Integer.parseInt(scanner.nextLine());
 
@@ -118,10 +118,10 @@ public class App {
     // REQUISITO 5b: CRUD completo para a entidade Professor
     private static void gerenciarProfessores() {
         System.out.println("\n\n\n\n--- Gerenciar Professores ---");
-        System.out.println("1. Cadastrar Professor");
-        System.out.println("2. Listar Professores");
-        System.out.println("3. Atualizar Professor");
-        System.out.println("4. Remover Professor");
+        System.out.println("1 Cadastrar Professor");
+        System.out.println("2 Listar Professores");
+        System.out.println("3 Atualizar Professor");
+        System.out.println("4 Remover Professor");
         System.out.print("Opção: ");
         int op = Integer.parseInt(scanner.nextLine());
         switch (op) {
@@ -174,10 +174,10 @@ public class App {
     // REQUISITO 5c: CRUD completo para a entidade Disciplina
     private static void gerenciarDisciplinas() {
         System.out.println("\n\n\n\n--- Gerenciar Disciplinas ---");
-        System.out.println("1. Cadastrar Disciplina");
-        System.out.println("2. Listar Disciplinas");
-        System.out.println("3. Atualizar Disciplina");
-        System.out.println("4. Remover Disciplina");
+        System.out.println("1 Cadastrar Disciplina");
+        System.out.println("2 Listar Disciplinas");
+        System.out.println("3 Atualizar Disciplina");
+        System.out.println("4 Remover Disciplina");
         System.out.print("Opção: ");
         int op = Integer.parseInt(scanner.nextLine());
         switch (op) {
@@ -233,10 +233,10 @@ public class App {
     // REQUISITO 5d: CRUD completo para a entidade Curso
     private static void gerenciarCursos() {
         System.out.println("\n\n\n\n--- Gerenciar Cursos ---");
-        System.out.println("1. Cadastrar Curso");
-        System.out.println("2. Listar Cursos");
-        System.out.println("3. Atualizar Curso");
-        System.out.println("4. Remover Curso");
+        System.out.println("1 Cadastrar Curso");
+        System.out.println("2 Listar Cursos");
+        System.out.println("3 Atualizar Curso");
+        System.out.println("4 Remover Curso");
         System.out.print("Opção: ");
         int op = Integer.parseInt(scanner.nextLine());
         switch (op) {
@@ -291,10 +291,10 @@ public class App {
     // REQUISITO 5e: CRUD completo para a entidade Turma
     private static void gerenciarTurmas() {
         System.out.println("\n\n\n\n--- Gerenciar Turmas ---");
-        System.out.println("1. Criar Turma");
-        System.out.println("2. Listar Turmas");
-        System.out.println("3. Adicionar Aluno à Turma");
-        System.out.println("4. Remover Turma");
+        System.out.println("1 Criar Turma");
+        System.out.println("2 Listar Turmas");
+        System.out.println("3 Adicionar Aluno à Turma");
+        System.out.println("4 Remover Turma");
         System.out.print("Opção: ");
         int op = Integer.parseInt(scanner.nextLine());
         try {
@@ -344,10 +344,10 @@ public class App {
     // REQUISITO 5f: CRUD completo para a entidade Endereco
     private static void gerenciarEnderecos() {
         System.out.println("\n\n\n\n--- Gerenciar Endereços ---");
-        System.out.println("1. Cadastrar Endereço");
-        System.out.println("2. Listar Endereços");
-        System.out.println("3. Atualizar Endereço");
-        System.out.println("4. Remover Endereço");
+        System.out.println("1 Cadastrar Endereço");
+        System.out.println("2 Listar Endereços");
+        System.out.println("3 Atualizar Endereço");
+        System.out.println("4 Remover Endereço");
         System.out.print("Opção: ");
         int op = Integer.parseInt(scanner.nextLine());
         try {
