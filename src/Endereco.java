@@ -10,12 +10,26 @@ public class Endereco {
     }
 
     // Getters e Setters
-    public String getId() { return id; }
-    public String getRua() { return rua; }
-    public void setRua(String rua) { this.rua = rua; }
-    public String getCidade() { return cidade; }
-    public void setCidade(String cidade) { this.cidade = cidade; }
-    
+    public String getId() {
+        return id;
+    }
+
+    public String getRua() {
+        return rua;
+    }
+
+    public void setRua(String rua) {
+        this.rua = rua;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
     @Override
     public String toString() {
         return "Endereço [ID=" + id + ", Rua=" + rua + ", Cidade=" + cidade + "]";
